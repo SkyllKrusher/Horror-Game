@@ -14,11 +14,4 @@ public class RotateSky : MonoBehaviour
         if (minutesPerDay == 0) { return; }
         RenderSettings.skybox.SetFloat("_Rotation", Time.time * 6f / minutesPerDay);
     }
-
-    void Start()
-    {
-        Debug.Log("Test Log");
-        Debug.LogWarning("Test Log Warning");
-        Debug.LogError("Test Log Error");
-    }
 }
