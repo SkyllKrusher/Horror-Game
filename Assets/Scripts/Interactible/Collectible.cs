@@ -4,6 +4,6 @@ public class Collectible : MonoBehaviour, ICollectible
 {
     public virtual void Collect()
     {
-        throw new System.NotImplementedException();
+        // base.Collect();
     }
 }
