@@ -45,4 +45,14 @@ public class InputManager : MonoBehaviour
     {
         return playerControls.Player.Jump.triggered;
     }
+
+    public bool IsAttackPressedThisFrame()
+    {
+        return playerControls.Player.Attack.WasPressedThisFrame();
+    }
+
+    public bool IsAttackReleasedThisFrame()
+    {
+        return playerControls.Player.Attack.WasReleasedThisFrame();
+    }
 }

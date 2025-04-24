@@ -20,7 +20,7 @@ public class GameTimer : MonoBehaviour
 
     void Update()
     {
-        inGameHoursPassed = (Time.time - startTime) * speedUp / 360f;
+        inGameHoursPassed = (Time.time - startTime) * speedUp / 360f + startHour;
 
         int timeHH = (int)(inGameHoursPassed % 12);
         float timeMM = (int)inGameHoursPassed;
