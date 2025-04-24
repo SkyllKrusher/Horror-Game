@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour, ICollectible
 {
-    public void Collect()
+    public virtual void Collect()
     {
         throw new System.NotImplementedException();
     }

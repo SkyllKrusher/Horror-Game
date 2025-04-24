@@ -1,11 +1,9 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthCollectible : Collectible
+public class InventoryController : MonoBehaviour
 {
-    public override void Collect()
-    {
-
-    }
+    private Dictionary<CollectibleType, InventoryItemType> collectibles;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
