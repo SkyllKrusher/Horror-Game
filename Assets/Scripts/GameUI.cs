@@ -5,6 +5,8 @@ public class GameUI : MonoBehaviour
 {
     [SerializeField]
     private TMP_Text gameTimeText;
+    [SerializeField]
+    private TMP_Text gameDayText;
     GameTimer gameTimer;
 
     private void Start()
@@ -19,7 +21,8 @@ public class GameUI : MonoBehaviour
 
     private void SetGameTimeUI(int day, int timeHH, int timeMM, string amOrPm)
     {
-        gameTimeText.text = "Day " + day + " -> " + timeHH + ":" + (int)timeMM + " " + amOrPm;
+        gameTimeText.text = timeHH + ":" + (int)timeMM + " " + amOrPm;
+        gameDayText.text = "Day " + day;
     }
 
     private void SetGameTimeUI(TimeInfo timeInfo)
