@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameUI : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class GameUI : MonoBehaviour
     private TMP_Text gameTimeText;
     [SerializeField]
     private TMP_Text gameDayText;
+    [SerializeField]
+    private Slider healthSlider;
     GameTimer gameTimer;
 
     private void Start()
@@ -28,5 +31,10 @@ public class GameUI : MonoBehaviour
     private void SetGameTimeUI(TimeInfo timeInfo)
     {
         SetGameTimeUI(timeInfo.day, timeInfo.hh, timeInfo.mm, timeInfo.amOrPm);
+    }
+
+    public void SetHealthUI(float healthValue)
+    {
+        healthSlider.value = healthValue;
     }
 }

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Unity.IO.LowLevel.Unsafe;
 using UnityEngine;
 
-public class InventoryItemType
+public class InventoryItem : MonoBehaviour
 {
     private CollectibleType itemType;
     private int holdingCount;
