@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
         cameraTransform = Camera.main.transform;
         inputManager = InputManager.Instance;
+        Cursor.visible = false;
     }
 
     void Update()
