@@ -4,7 +4,7 @@ public class HealthCollectible : Collectible
 {
     public override void Collect()
     {
-
+        base.Collect();
     }
 
 
