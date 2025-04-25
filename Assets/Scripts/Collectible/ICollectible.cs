@@ -2,6 +2,9 @@ using UnityEngine;
 
 public interface ICollectible
 {
-    public abstract void Collect();
+    public virtual void Collect()
+    {
+
+    }
 
 }
